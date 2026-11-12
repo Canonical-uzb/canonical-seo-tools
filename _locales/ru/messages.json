@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "Canonical SEO Tools"
+  },
+  "extDescription": {
+    "message": "SEO-анализ страницы в боковой панели: мета-теги, индексация, robots.txt, текст, ссылки, разметка, скорость, домен и DNS."
+  },
+  "menuCount": {
+    "message": "Canonical: посчитать символы"
+  },
+  "menuOpen": {
+    "message": "Canonical: открыть панель"
+  },
+  "cmdOpen": {
+    "message": "Открыть панель Canonical"
+  }
+}

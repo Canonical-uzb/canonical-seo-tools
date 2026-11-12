@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "Canonical SEO Tools"
+  },
+  "extDescription": {
+    "message": "On-page SEO in a side panel: meta tags, indexability, robots.txt, content, links, schema, speed, domain and DNS. No sign-up."
+  },
+  "menuCount": {
+    "message": "Canonical: count characters"
+  },
+  "menuOpen": {
+    "message": "Canonical: open panel"
+  },
+  "cmdOpen": {
+    "message": "Open the Canonical panel"
+  }
+}

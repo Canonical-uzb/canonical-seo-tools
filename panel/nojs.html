@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canonical — без JavaScript</title>
+<style>
+  :root { --bg: #f4f7fa; --fg: #15202b; --muted: #5a6875; --line: #d9e2ea; --accent: #0a6f9c; --accent-fg: #fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f151b; --fg: #e2e9ef; --muted: #93a2b0; --line: #2a3744; --accent: #4cc3ec; --accent-fg: #06212e; } }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 14px/1.4 system-ui, sans-serif; }
+  .bar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; padding: 8px 14px; border-bottom: 1px solid var(--line); }
+  .bar b { color: var(--accent); }
+  .bar .url { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 60vw; }
+  .tabs { display: flex; gap: 6px; margin-left: auto; }
+  .tabs button { font: 600 13px system-ui, sans-serif; border: 1px solid var(--accent); background: transparent; color: var(--accent); border-radius: 7px; padding: 5px 10px; cursor: pointer; }
+  .tabs button[aria-pressed="true"] { background: var(--accent); color: var(--accent-fg); }
+  iframe, pre { display: block; width: 100%; height: calc(100% - 72px); border: 0; background: #fff; }
+  pre { margin: 0; padding: 14px; box-sizing: border-box; overflow: auto; white-space: pre-wrap; word-break: break-word; background: var(--bg); color: var(--fg); font: 13px/1.5 ui-monospace, monospace; }
+  .msg { padding: 24px; }
+  .note { flex-basis: 100%; color: var(--muted); font-size: 12px; }
+  .tabs button[id="b-ext"][aria-pressed="false"] { border-style: dashed; }
+</style>
+</head>
+<body>
+<div class="bar"><b>Canonical</b><span id="info"></span><span class="url" id="url"></span>
+  <div class="tabs"><button id="b-ext" aria-pressed="false"></button><button id="b-view" aria-pressed="true">Как страница</button><button id="b-text" aria-pressed="false">Только текст</button><button id="b-code" aria-pressed="false">Исходный код</button></div></div>
+<div id="out" class="msg">Загружаю исходный HTML…</div>
+<script src="nojs.js"></script>
+</body>
+</html>
