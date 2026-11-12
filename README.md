@@ -4,8 +4,6 @@ On-page SEO audit in the Chrome side panel. Open any page, press **Refresh**, an
 
 [Русская версия ниже](#canonical-seo-tools--по-русски)
 
-![Overview](docs/screenshots/en-1-overview.png)
-
 ## What it checks
 
 | Area | Checks |
